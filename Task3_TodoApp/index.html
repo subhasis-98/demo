@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My To-Do App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📝 My To-Do List</h1>
+
+    <form id="taskForm">
+      <input type="text" id="title" placeholder="Task Title" required />
+      <textarea id="description" placeholder="Task Description" required></textarea>
+      <button type="submit" id="submitBtn">➕ Add Task</button>
+    </form>
+
+    <h2>📌 Pending Tasks</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="pendingList"></tbody>
+    </table>
+
+    <h2>✅ Completed Tasks</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody id="completedList"></tbody>
+    </table>
+
+    <footer style="text-align:center; margin-top: 20px;">Made with ❤ by Smruti</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
